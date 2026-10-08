@@ -1,0 +1,20 @@
+# Cadaster agent dependencies — pinned for reproducibility
+fastapi==0.115.12
+uvicorn[standard]==0.34.3
+pydantic==2.11.3
+pydantic-settings==2.8.1
+httpx==0.28.1
+shapely==2.1.0
+pyproj==3.7.1
+geojson==3.1.0
+cryptography==44.0.3
+PyNaCl==1.5.0
+python-dotenv==1.1.0
+sqlalchemy[asyncio]==2.0.40
+asyncpg==0.30.0
+alembic==1.15.2
+psycopg2-binary==2.9.10
+pytest==8.3.5
+pytest-asyncio==0.26.0
+httpx==0.28.1
+anyio==4.9.0

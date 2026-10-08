@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* ── Cadaster brand tokens ─────────────────────────────────────────────────── */
+:root {
+  /* Primary: deep teal — the colour of surveyed land on historical maps */
+  --color-primary:       #0d6e6e;
+  --color-primary-light: #11908f;
+  --color-primary-dark:  #094e4e;
+
+  /* Accent: warm amber — parchment / cadastral seal */
+  --color-accent:        #e89d3a;
+  --color-accent-light:  #f2b55e;
+  --color-accent-dark:   #c47c1c;
+
+  /* Neutrals */
+  --color-surface:       #f8f9fa;
+  --color-surface-dark:  #1a1f2e;
+  --color-border:        #d1d9e0;
+  --color-text:          #1a1f2e;
+  --color-text-muted:    #6b7280;
+
+  /* Status */
+  --color-success:       #16a34a;
+  --color-warning:       #d97706;
+  --color-error:         #dc2626;
+  --color-info:          #2563eb;
+
+  /* Map */
+  --color-polygon-fill:  rgba(13, 110, 110, 0.18);
+  --color-polygon-stroke:#0d6e6e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-surface:     #1a1f2e;
+    --color-surface-dark:#111827;
+    --color-border:      #2d3748;
+    --color-text:        #f1f5f9;
+    --color-text-muted:  #94a3b8;
+  }
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+/* ── Leaflet overrides ────────────────────────────────────────────────────── */
+.leaflet-container { z-index: 0; }
+.cadaster-polygon-style {
+  fill: var(--color-polygon-fill);
+  stroke: var(--color-polygon-stroke);
+  stroke-width: 2px;
+}

@@ -1,0 +1,24 @@
+[package]
+name = "cadaster-token"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = { workspace = true }
+cadaster-verifier = { path = "../cadaster-verifier" }
+cadaster-attester-registry = { path = "../cadaster-attester-registry" }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true }
+ed25519-dalek = { version = "=2.1.1", features = ["rand_core"] }
+
+[features]
+testutils = [
+    "soroban-sdk/testutils",
+    "cadaster-verifier/testutils",
+    "cadaster-attester-registry/testutils",
+]
