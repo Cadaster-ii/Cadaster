@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Cadaster logo">
+  <title>Cadaster</title>
+
+  <!--
+    Icon: map-pin with a verification checkmark inside
+    Primary teal  #0d6e6e
+    Accent amber  #e89d3a
+    Works on light and dark backgrounds.
+  -->
+
+  <!-- Outer pin body with rounded top and pointed bottom -->
+  <path
+    d="M32 4C22.059 4 14 12.059 14 22
+       C14 34.5 32 60 32 60
+       C32 60 50 34.5 50 22
+       C50 12.059 41.941 4 32 4Z"
+    fill="#0d6e6e"
+  />
+
+  <!-- Inner circle cutout (white) -->
+  <circle cx="32" cy="22" r="11" fill="white"/>
+
+  <!-- Amber checkmark -->
+  <polyline
+    points="24,22 29,27 40,16"
+    stroke="#e89d3a"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Subtle shadow ellipse at pin tip -->
+  <ellipse cx="32" cy="61" rx="6" ry="2" fill="#0d6e6e" opacity="0.18"/>
+</svg>

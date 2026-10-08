@@ -1,9 +1,20 @@
-# Cadaster
+<p align="center">
+  <img src="assets/logo.svg" alt="Cadaster" width="320" />
+</p>
 
-> Geo-verification oracle for RWA tokenization on Stellar. An agent checks claimed coordinates against satellite data and signs an attestation before minting.
+<p align="center">
+  <strong>Geo-verification oracle for RWA tokenization on Stellar.</strong><br>
+  An agent checks claimed coordinates against satellite data and signs an attestation before minting.
+</p>
 
-[![CI](https://github.com/cadaster-project/cadaster/actions/workflows/ci.yml/badge.svg)](https://github.com/cadaster-project/cadaster/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  <a href="https://github.com/Cadaster-ii/Cadaster/actions/workflows/ci.yml">
+    <img src="https://github.com/Cadaster-ii/Cadaster/actions/workflows/ci.yml/badge.svg" alt="CI">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+  </a>
+</p>
 
 ---
 
